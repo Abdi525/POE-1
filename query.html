@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query - Taric Coding School</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home |</a>
+        <a href="about.html">About us |</a>
+        <a href="service.html">Services |</a>
+        <a href="query.html">Query |</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <style>
+    h3{
+        font-size: large;
+    }
+
+    p{
+        font-size: large;
+    }
+
+    body{
+        background-size: cover;
+    }
+    nav a:hover {
+        box-shadow: 3px 3px 3px lime;
+    }
+
+    footer{
+        text-align: right;
+        font-size: small;
+    }
+
+    </style>
+
+    <h3>Query Form</h3>
+
+    <p>Fill in the form bellow if you have any queries for us, or want to volunteer or would like sponsor</p>
+    <form action="#" method="post">
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" placeholder="someone@gmail.com" name="email" required><br><br>
+
+        <label for="query">Type of Query:</label>
+        <select id="query" name="query">
+            <option value="service">Services Query</option>
+            <option value="sponsor">Become a Sponsor</option>
+            <option value="volunteer">Volunteer</option>
+        </select><br><br>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="6" cols="30"></textarea><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Taric Coding School</p>
+    </footer>
+
+</body>
+</html>
