@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #222;
+    background-color: rgb(196, 228, 239);
+    line-height: 26px;
+    padding: 0 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header{
+    text-align: left;
+    padding: 10px 0;
+    background-color: #4caf50;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1{
+    text-align: center;
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: larger;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+
+p{
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+    color: #555555;
+}
+
+a{
+    font-size: 20px;
+    padding: 5px;
+}
+
+nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: #3333336c;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: 0.1s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4caf50;
+    color: white;
+    box-shadow: 3px 3px 3px lime;
+}
+
+img{
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+li{
+    list-style: none;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+footer{
+    text-align: left;
+    font-size: x-small;
+    padding: 5px 0;
+    background-color: rgba(255, 17, 255, 0.067);
+    margin-top: 5px;
+    border-top: 1px solid #cccc;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+    background-color: #e8f5e9;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(109, 158, 232);
+    border-radius: 5px;
+    font-size: large;
+}
+
+input[type="submit"]{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+input[type="submit"]:hover{
+    background-color: #45a049;
+    box-shadow: 3px 3px 3px lime;
+}
+
+body > header + nav + main,
+body > header + nav + h3,
+body > nav + h3,
+body > h3 + img,
+body > h3 + p {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+}
